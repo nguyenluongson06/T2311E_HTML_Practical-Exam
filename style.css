@@ -1,0 +1,207 @@
+/* css reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* end css reset */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+body * {
+    max-width: 600px;
+}
+
+.hr-text {
+    border: 0;
+    font-size: 14px;
+    height: 1.5em;
+    line-height: 1em;
+    position: relative;
+    text-align: center;
+    width: 400px;
+    margin: 8px;
+}
+
+.hr-text::before {
+    content: "";
+    background: black;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    height: 1px;
+}
+
+.hr-text::after {
+    background-color: white;
+    color: black;
+    content: attr(data-content);
+    line-height: 1.5em;
+    padding: 0 7px;
+    position: relative;
+}
+
+.center {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 4px;
+}
+
+.form-input {
+    width: 400px;
+    height: 40px;
+    margin: 4px;
+    padding: 0;
+    border: 1px solid black;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+div.form-input > .fa-solid {
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid black;
+}
+
+.fa-solid::before {
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa-solid::after {
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    width: 400px;
+    height: 40px;
+    margin: 8px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+#countryCode {
+    width: 35%;
+    height: 40px;
+    border: none;
+    border-right: 1px solid black;
+}
+
+input {
+    height: 36px;
+    width: 350px;
+    border: none
+}
+
+#phoneNum {
+    width: 246px;
+    padding-left: 4px;
+    padding-right: 4px ;
+}
+
+#job {
+    height: 39px;
+    width: 350px;
+    border: none;
+}
+
+h1 {
+    font-size: 36px;
+    margin: 8px 0;
+}
+
+h2 {
+    font-size: 24px;
+    margin: 8px 0; 
+}
+
+#login-x {
+    background-color: black;
+    color: white;
+}
+
+#login-fb {
+    background-color: #4267b2;
+    color: white;
+}
+
+#submit {
+    background-color: blue;
+    color: white;
+}
