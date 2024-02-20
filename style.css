@@ -205,3 +205,9 @@ h2 {
     background-color: blue;
     color: white;
 }
+
+.warning {
+    color: red;
+    visibility: hidden;
+    height: 0px;
+}
